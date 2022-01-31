@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import ProductCard from "../ProductCard/ProductCard";
 import { Products, Categories } from "./mock";
 import { MdArrowBackIos, MdCheck } from "react-icons/md";
+import ColorCircle from "../ColorCircle/Hero";
 
 function Main() {
   //accordion
@@ -10,7 +11,6 @@ function Main() {
   const [visibleColorFilter, setVisibleColorFilter] = useState(false);
 
   //range slider
-
 
   //category filter
   const [categoryFilter, setCategoryFilter] = useState(Categories);
@@ -139,20 +139,15 @@ function Main() {
             {visibleColorFilter && (
               <div className="accordion-content animate-fade py-4 px-8 flex">
                 <div className="flex flex-wrap justify-around">
-                  <span className="rounded-full w-[64px] h-[64px] m-[2px] bg-black"></span>
-                  <span className="rounded-full w-[64px] h-[64px] m-[2px] bg-red-600"></span>
-                  <span className="rounded-full w-[64px] h-[64px] m-[2px] bg-blue-600"></span>
-                  <span className="rounded-full w-[64px] h-[64px] m-[2px] bg-green-600"></span>
-                  <span className="rounded-full w-[64px] h-[64px] m-[2px] bg-yellow-600"></span>
-                  <span className="rounded-full w-[64px] h-[64px] m-[2px] bg-orange-600"></span>
-                  <span className="rounded-full w-[64px] h-[64px] m-[2px] bg-gray-600 flex justify-center items-center">
-                    <MdCheck />
-                  </span>
-                  <span className="rounded-full w-[64px] h-[64px] m-[2px] border border-gray-200 bg-white flex justify-center items-center">
-                    <MdCheck />
-                  </span>
+                  <ColorCircle background="bg-black" />
+                  <ColorCircle background="bg-red-600" />
+                  <ColorCircle background="bg-blue-600" />
+                  <ColorCircle background="bg-green-600" />
+                  <ColorCircle background="bg-yellow-600" />
+                  <ColorCircle background="bg-orange-600" />
+                  <ColorCircle background="bg-gray-600" />
+                  <ColorCircle background="bg-white" />
                 </div>
-                <div></div>
               </div>
             )}
           </div>
