@@ -15,7 +15,7 @@ function ProductCard(props) {
   const [isCart, setIsCart] = useState(false);
 
   return (
-    <div className="ProductCard w-[28%] mr-[3%] mb-[3%] bg-white border rounded-[20px] border-[#E2E2E2] flex flex-col justify-start items-center transition-all duration-300 hover:shadow-2xl  hover:cursor-pointer hover:scale-[1.025">
+    <div className="ProductCard w-full mx-6 my-4 lg:w-[28%] lg:my-0 lg:mx-0 lg:mr-[3%] lg:mb-[3%] bg-white border rounded-[20px] border-[#E2E2E2] flex flex-col justify-start items-center transition-all duration-300 hover:shadow-2xl  hover:cursor-pointer hover:scale-[1.025">
       <div className="relative w-[80%] block h-[220px] select-none">
         {props.image && (
           <Image

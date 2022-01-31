@@ -19,7 +19,7 @@ function Footer() {
 
   return (
     <div className="footer flex flex-col lg:flex-row items-center">
-      <div className="bg-[#0065DB] w-full lg:w-1/4 text-center py-8 text-xl rounded-tr-xl z-10 hover:cursor-pointer hover:scale-105 transition-all duration-300">
+      <div className="bg-[#0065DB] w-full lg:w-1/4 text-center py-8 text-xl rounded-tr-xl z-10 hover:cursor-pointer transition-all duration-300">
         <h3 className="font-bold text-white uppercase">More than 100 brands</h3>
       </div>
       <div className="w-full lg:w-3/4 px-4">
